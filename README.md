@@ -24,9 +24,9 @@ def open_email():
  from email.message import EmailMessage
 
  # Define email sender and receiver
- email_sender = 'ppraveen2150@gmail.com'
- email_password = 'xi wxsz wuyc'
- email_receiver = 'ptppraveen2150@gmail.com'
+ email_sender = 'ppr******@gmail.com'
+ email_password = 'xi ****** wuyc'
+ email_receiver = 'pt********0@gmail.com'
 
  # Set the subject and body of the email
  subject = 'Check out my new video!'
@@ -52,15 +52,15 @@ def send_sms():
    from twilio.rest import Client
 
  # Twilio account credentials
-   account_sid = 'AC4caac547521bdf01a9b821a8cd5915b9'
-   auth_token = 'f02f2741ff54027502db911648aef102'
-   twilio_phone_number = '+18038830970'
+   account_sid = 'AC4c************'
+   auth_token = 'f02f2************'
+   twilio_phone_number = '+************0'
 
  # Create a Twilio client
    client = Client(account_sid, auth_token)
  # Send the SMS
    message = client.messages.create(
-    	from_='+18038830970',
+    	from_='+**********',
  	body =input("typemsg:"),
  	to =input("reciver no:"),
  	)
@@ -84,7 +84,7 @@ def get_geolocation():
     loc = Nominatim(user_agent="GetLoc")
  
  # entering the location name
-    getLoc = loc.geocode("shollinganallur,chennai")
+    getLoc = loc.geocode("sho******r,chennai")
  
  # printing address
     print(getLoc.address)
